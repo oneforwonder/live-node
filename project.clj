@@ -1,8 +1,10 @@
 (defproject live-node "0.0.0-SNAPSHOT"
   :description "live-node"
   :dependencies [[org.clojure/clojure "1.5.1"]
-                 [org.clojure/clojurescript "0.0-2156"]
-                 [om "0.4.2"]
+                 [org.clojure/clojurescript "0.0-2173"]
+                 [om "0.6.4"]
+                 [prismatic/om-tools "0.2.2"]
+                 [prismatic/schema "0.2.4"]
                  [specljs "2.9.1"]]
 
   :plugins [[lein-cljsbuild "1.0.1"]
