@@ -30,3 +30,13 @@
   (doto res
     (.setHeader "Content-Type" "application/json")
     (.end (util/->json features))))
+
+(def counter (atom 666))
+
+(defn get-count-handler [req res]
+  (doto res
+    (.setHeader "Content-Type" "application/json")
+    (.end (str @counter))))
+
+(defn set-count-handler [req res]
+  (get-count-handler req res))

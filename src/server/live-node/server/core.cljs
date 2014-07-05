@@ -12,6 +12,7 @@
       (.use ((aget express "static") (str js/__dirname "/public")))
       (.get "/api/features" handlers/features-handler)
       (.get "/api/hello" handlers/hello-handler)
+      (.get "/api/get-count" handlers/get-count-handler)
       (.get "/api/error" (fn [req res] (throw (js/Error "Bad happened")))))
 
     (.listen app 4000)

@@ -5,6 +5,7 @@
                  [om "0.6.4"]
                  [prismatic/om-tools "0.2.2"]
                  [prismatic/schema "0.2.4"]
+                 [cljs-ajax "0.2.6"]
                  [specljs "2.9.1"]]
 
   :plugins [[lein-cljsbuild "1.0.1"]
